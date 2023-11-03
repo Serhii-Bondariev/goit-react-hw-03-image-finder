@@ -1,3 +1,10 @@
+import React from 'react';
+import Searchbar from './Searchbar/Searchbar';
+import ImageGallery from './ImageGallery/ImageGallery';
+import Modal from './Modal/Modal';
+
+import Loader from './Loader/Loader';
+
 export const App = () => {
   return (
     <div
@@ -7,10 +14,15 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
-      React homework template
+      <Searchbar />
+      <ImageGallery />
+      <Modal />
+      <Loader />
     </div>
   );
 };
+
+export default App;
